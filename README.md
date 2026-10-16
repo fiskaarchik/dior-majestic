@@ -1,1 +1,1 @@
-# dior-majestic
+# Семья диор Majestic RP.
