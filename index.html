@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIOR | Государственная семья</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #d8b66a;
+  --bg: #080d17;
+  --panel: #101a2b;
+  --text: #edf1f8;
+  --muted: #9aa8bc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 7%;
+  border-bottom: 1px solid #ffffff12;
+  background: #0a1120;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: var(--gold);
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:not(.btn) {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #10131b;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.12);
+}
+
+.hero {
+  min-height: 580px;
+  padding: 110px 8%;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 80% 35%, #1d3455 0, transparent 50%),
+    linear-gradient(120deg, #080d17, #101d31);
+}
+
+.tag {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: clamp(52px, 8vw, 90px);
+  line-height: 1.02;
+  letter-spacing: 4px;
+}
+
+h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 570px;
+  line-height: 1.8;
+  margin: 24px 0 30px;
+}
+
+section {
+  padding: 75px 8%;
+}
+
+.section-title {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #ffffff12;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 13px 0;
+  color: var(--gold);
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.icon {
+  font-size: 28px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.stat {
+  padding: 22px;
+  background: #ffffff06;
+  border: 1px solid #ffffff12;
+  border-radius: 10px;
+}
+
+.stat strong {
+  display: block;
+  color: var(--gold);
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.stat small {
+  color: var(--muted);
+}
+
+footer {
+  padding: 30px 8%;
+  border-top: 1px solid #ffffff12;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  header {
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 18px 5%;
+  }
+
+  nav {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 80px 6%;
+    min-height: 480px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="#">DIOR</a>
+
+  <nav>
+    <a href="#about">О семье</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="https://discord.gg/Wfs9bHmU"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn">Discord ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="hero">
+  <div>
+    <div class="tag">MAJESTIC RP · LOS ANGELES</div>
+
+    <h1>FAMILY<br><span>DIOR</span></h1>
+
+    <p>
+      Дисциплина. Единство. Репутация.
+      Официальный портал государственной семьи DIOR
+      на сервере Los Angeles.
+    </p>
+
+    <a class="btn"
+       href="https://discord.gg/Wfs9bHmU"
+       target="_blank"
+       rel="noopener noreferrer">
+       Подать заявку ↗
+    </a>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>DIOR</strong>
+        <small>Название семьи</small>
+      </div>
+
+      <div class="stat">
+        <strong>LA</strong>
+        <small>Игровой сервер</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="tag">ABOUT US</div>
+
+  <h2 class="section-title">Единая команда. Общая цель.</h2>
+
+  <p class="section-sub">
+    DIOR — семья, основанная на ответственности,
+    взаимоуважении и организованности.
+  </p>
+</section>
+
+<section id="advantages">
+  <div class="tag">OUR PRINCIPLES</div>
+
+  <h2 class="section-title">Наши принципы</h2>
+
+  <p class="section-sub">
+    Основы, на которых строится наша семья.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">⚖️</div>
+      <h3>Дисциплина</h3>
+      <p>
+        Соблюдаем правила сервера, уважаем участников
+        и поддерживаем порядок.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Репутация</h3>
+      <p>
+        Действуем достойно и ответственно представляем DIOR.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Команда</h3>
+      <p>
+        Помогаем друг другу и развиваем семью вместе.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="tag">JOIN DIOR</div>
+
+  <h2 class="section-title">Стань частью DIOR</h2>
+
+  <p class="section-sub">
+    Хочешь присоединиться к нашей семье?
+    Нажми на кнопку ниже и перейди в наш Discord.
+  </p>
+
+  <a class="btn"
+     href="https://discord.gg/Wfs9bHmU"
+     target="_blank"
+     rel="noopener noreferrer">
+     Перейти к заявке в Discord ↗
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 DIOR Family</span>
+  <span>Majestic RP · Los Angeles</span>
+</footer>
+
+</body>
+</html>
+
